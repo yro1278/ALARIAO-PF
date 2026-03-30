@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyrone Alariao – IT Student / Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">TA</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="#about" class="nav-link" onclick="scrollToSection('about')">About</a></li>
+                <li><a href="#projects" class="nav-link" onclick="scrollToSection('projects')">Projects</a></li>
+                <li><a href="#certificates" class="nav-link" onclick="scrollToSection('certificates')">Certificates</a></li>
+
+                <li><a href="#contact" class="nav-link" onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Tyrone Alariao</h1>
+            <p class="hero-role">IT Student & Web Developer</p>
+            <p class="hero-intro">Building clean, functional websites with modern design.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary" onclick="scrollToSection('projects')">View My Work</a>
+                <a href="#contact" class="btn btn-secondary" onclick="scrollToSection('contact')">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Get to Know Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card about-image-card">
+                    <div class="about-image">
+                        <div class="profile-pic">
+                            <img src="photo/Tyrone.png" alt="Tyrone Alariao">
+                        </div>
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+                <div class="about-card about-text-card">
+                    <p class="about-description">I'm an IT student passionate about web development. I create responsive, user-friendly websites with a focus on clean design and smooth user experience.</p>
+                    <p class="about-description">Currently learning and building projects to strengthen my skills in modern web technologies.</p>
+                    <div class="about-skills">
+                        <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/24/0ea5e9/html.png" alt="HTML"> HTML</span>
+                        <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/24/0ea5e9/css3.png" alt="CSS"> CSS</span>
+                        <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/24/0ea5e9/javascript.png" alt="JavaScript"> JavaScript</span>
+                        <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/24/0ea5e9/php.png" alt="PHP"> PHP</span>
+                        <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/24/0ea5e9/sql.png" alt="MySQL"> MySQL</span>
+                        <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/24/0ea5e9/figma.png" alt="Figma"> Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-title">Featured Work</h2>
+            </div>
+            <div class="project-card featured">
+                <div class="project-visual">
+                    <div class="project-wallet" onclick="this.classList.toggle('flipped')">
+                        <img src="landing.png" alt="FundHarmony Landing Page" class="project-front">
+                        <div class="project-back">
+                            <img src="pro.png" alt="FundHarmony Dashboard">
+                        </div>
+                        <span class="flip-hint">Click to flip</span>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                <div class="project-details">
+                    <h3>FundHarmony System</h3>
+                    <p>A comprehensive loan management system designed to streamline financial operations and enhance user experience.</p>
+                    <div class="features-list">
+                        <div class="feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Loan Management</span>
+                        </div>
+                        <div class="feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>User Dashboard</span>
+                        </div>
+                        <div class="feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Reports & Analytics</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge"><img src="https://img.icons8.com/ios-filled/18/0ea5e9/html.png" alt="HTML"> HTML</span>
+                        <span class="tech-badge"><img src="https://img.icons8.com/ios-filled/18/0ea5e9/css3.png" alt="CSS"> CSS</span>
+                        <span class="tech-badge"><img src="https://img.icons8.com/ios-filled/18/0ea5e9/javascript.png" alt="JavaScript"> JavaScript</span>
+                        <span class="tech-badge"><img src="https://img.icons8.com/ios-filled/18/0ea5e9/php.png" alt="PHP"> PHP</span>
+                        <span class="tech-badge"><img src="https://img.icons8.com/ios-filled/18/0ea5e9/sql.png" alt="MySQL"> MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/yro1278/Fundharmony.git" target="_blank" class="btn btn-ghost">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            Source Code
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Achievements</span>
+                <h2 class="section-title">Certificates</h2>
+            </div>
+            <div class="certificates-grid">
+                <div class="cert-card" data-tilt>
+                    <div class="cert-wallet" onclick="this.classList.toggle('flipped')">
+                        <img src="c++.jpg" alt="C++ Certificate" class="cert-front">
+                        <div class="cert-back">
+                            <img src="c++ 2.jpg" alt="C++ Certificate 2">
+                        </div>
+                        <span class="flip-hint">Click to flip</span>
+                    </div>
+                    <h4>C++ Certification</h4>
+                    <p class="cert-issuer">KodeGo</p>
+                    <div class="cert-border"></div>
+                </div>
+                <div class="cert-card" data-tilt>
+                    <div class="cert-wallet" onclick="this.classList.toggle('flipped')">
+                        <img src="filpas.jpg" alt="Filpas Certificate" class="cert-front">
+                    </div>
+                    <h4>Web Development</h4>
+                    <p class="cert-issuer">FILPAS</p>
+                    <div class="cert-border"></div>
+                </div>
+                <div class="cert-card" data-tilt>
+                    <div class="cert-wallet" onclick="this.classList.toggle('flipped')">
+                        <img src="python.jpg" alt="Python Certificate" class="cert-front">
+                        <div class="cert-back">
+                            <img src="python 1.jpg" alt="Python Certificate 2">
+                        </div>
+                        <span class="flip-hint">Click to flip</span>
+                    </div>
+                    <h4>Python Certification</h4>
+                    <p class="cert-issuer">KodeGo</p>
+                    <div class="cert-border"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">tyronealariao06@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">09919094456</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-section">
+                        <span class="social-label">Follow Me</span>
+                        <div class="social-links">
+                            <a href="https://github.com/yro1278" target="_blank" class="social-link" title="GitHub">
+                                <img src="https://img.icons8.com/ios-filled/24/ffffff/github.png" alt="GitHub">
+                            </a>
+                            <a href="https://www.linkedin.com/in/tyrone-alariao-0979053a8?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-link" title="LinkedIn">
+                                <img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" alt="LinkedIn">
+                            </a>
+                            <a href="https://www.facebook.com/share/1SAVkAVNmA/" target="_blank" class="social-link" title="Facebook">
+                                <img src="https://img.icons8.com/ios-filled/24/ffffff/facebook--v1.png" alt="Facebook">
+                            </a>
+                            <a href="https://www.instagram.com/im_yro?igsh=MXNyd3ZpMmprYnI0bw==" target="_blank" class="social-link" title="Instagram">
+                                <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram.png" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-card">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 <span>Tyrone Alariao</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <button class="chatbot-toggle" id="chatbotToggle" onclick="document.getElementById('chatbotContainer').classList.toggle('active')" style="display:flex !important; visibility:visible !important; opacity:1 !important; border:none;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+    </button>
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <h4>Chat with Tyrone</h4>
+            <button class="chatbot-close" id="chatbotClose">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="chatbot-message bot">
+                Hi there! I'm Tyrone's AI assistant. How can I help you today?
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbotInput" placeholder="Type your message...">
+            <button id="chatbotSend" type="button">Send</button>
+        </div>
+    </div>
+
+    <script>
+    // Smooth scroll animation
+    function scrollToSection(id) {
+        var target = document.getElementById(id);
+        if (target) {
+            var targetPosition = target.offsetTop - 80;
+            var startPosition = window.pageYOffset;
+            var distance = targetPosition - startPosition;
+            var duration = 1000;
+            var startTime = null;
+
+            function animation(currentTime) {
+                if (startTime === null) startTime = currentTime;
+                var timeElapsed = currentTime - startTime;
+                var run = timeElapsed / duration;
+                if (run < 1) {
+                    var ease = run * (2 - run);
+                    window.scrollTo(0, startPosition + distance * ease);
+                    requestAnimationFrame(animation);
+                } else {
+                    window.scrollTo(0, targetPosition);
+                }
+            }
+            requestAnimationFrame(animation);
+        }
+    }
+
+    // Chatbot functionality
+    var chatbotToggle = document.getElementById('chatbotToggle');
+    var chatbotContainer = document.getElementById('chatbotContainer');
+    var chatbotClose = document.getElementById('chatbotClose');
+    var chatbotInput = document.getElementById('chatbotInput');
+    var chatbotSend = document.getElementById('chatbotSend');
+    var chatbotMessages = document.getElementById('chatbotMessages');
+
+    chatbotToggle.onclick = function() {
+        chatbotContainer.classList.toggle('active');
+    };
+
+    chatbotClose.onclick = function() {
+        chatbotContainer.classList.remove('active');
+    };
+
+    function addMessage(text, sender) {
+        var messageDiv = document.createElement('div');
+        messageDiv.className = 'chatbot-message ' + sender;
+        messageDiv.innerText = text;
+        chatbotMessages.appendChild(messageDiv);
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }
+
+    function sendMessage() {
+        var message = chatbotInput.value;
+        if (!message.trim()) return;
+
+        addMessage(message, 'user');
+        
+        var userMsg = message.toLowerCase();
+        var response = "Ask about my skills, projects, certificates, or contact info!";
+        
+        if (userMsg.indexOf('who') > -1 || userMsg.indexOf('about') > -1) {
+            response = "Hi! I'm Tyrone, an IT student & Web Developer.";
+        } else if (userMsg.indexOf('skill') > -1) {
+            response = "My skills: HTML, CSS, JavaScript, PHP, MySQL, Figma, Java, Python";
+        } else if (userMsg.indexOf('project') > -1) {
+            response = "Projects: FundHarmony, Liberation of Luzon, Mac's Medical Clinic";
+        } else if (userMsg.indexOf('certificate') > -1 || userMsg.indexOf('cert') > -1) {
+            response = "Certificates: C++, Web Dev, Python";
+        } else if (userMsg.indexOf('contact') > -1 || userMsg.indexOf('email') > -1) {
+            response = "Contact: tyronealariao06@gmail.com | 09919094456";
+        } else if (userMsg.indexOf('hello') > -1 || userMsg.indexOf('hi') > -1) {
+            response = "Hello! How can I help you?";
+        }
+        
+        setTimeout(function() {
+            addMessage(response, 'bot');
+            chatbotInput.value = '';
+        }, 300);
+    }
+
+    chatbotSend.onclick = sendMessage;
+    chatbotInput.onkeypress = function(e) {
+        if (e.key === 'Enter') {
+            sendMessage();
+        }
+    };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
